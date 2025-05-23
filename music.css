@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #4d4d62;
+    color: white;
+}
+.container{
+    background-color: #1b1b32;
+    width: 500px;
+    height: max-content;
+    margin-left: 500px;
+    text-align: center;
+}
+.part1, .part2{
+    display: flex;
+}
+.lines div{
+    height: 2px;
+    width: 100px;
+    background-color: #f1be32;
+    margin: 20px;
+}
+h1{
+    margin-top: 10px;
+}
+.part2 .lines div{
+    width: 160px;
+}
+.play-option{
+    background-image: url('Images/music.jpeg');
+    width: 450px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 25px;
+}
+.play-option button{
+    background-color: #1b1b32;
+    margin-left: 8px;
+    margin-top: 180px;
+}
+button:focus{
+    border: 2px dashed #f1be32;
+}
+button img{
+    height: 20px;
+    width: auto;
+}
+#playlist-songs{
+    list-style: none;
+    color: white;
+    background-color: #1b1b32;
+    padding: 0;
+}
+#playlist-songs li{
+    background-color: #4d4d62;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.playlist-song-info {
+    background-color: #4d4d62;
+    color: white;
+    font-size: inherit;
+    height: 50px;
+    width: 450px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playlist-song-title {
+    margin-right: 100px;
+}
+.playlist-song-delete{
+    background-color: #4d4d62;
+    border: none;
+}
+[aria-current="true"] {
+  background-color: #1b1b32;
+}
+
+[aria-current="true"] p {
+  color: #f1be32;
+}
+.playlist-song-delete:hover circle,
+.playlist-song-delete:focus circle {
+  fill: #ff0000;
+}
+#player-song-title{
+    font-weight: 600;
+    font-size: 22px;
+}
+#player-song-artist{
+    color: #f1be32;
+    margin-top: 0;
+}
+#reset{
+    background-color: #1b1b32;
+    color: white;
+    font-size: inherit;
+    margin-bottom: 10px;
+}
